@@ -1,0 +1,41 @@
+{
+  "name": "symbl-media",
+  "version": "1.0.0",
+  "description": "Convenience tools to convert your media",
+  "main": "index.js",
+  "bin": {
+    "media": "./bin/index.js"
+  },
+  "directories": {
+    "lib": "lib",
+    "bin": "bin",
+    "example": "example"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/symblai/symbl-media.git"
+  },
+  "keywords": [
+    "symbl",
+    "media",
+    "tools",
+    "audio",
+    "convert",
+    "transcode",
+    "wav",
+    "mp3",
+    "mp4",
+    "video"
+  ],
+  "author": "toshish",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/symblai/symbl-media/issues"
+  },
+  "homepage": "https://github.com/symblai/symbl-media#readme",
+  "dependencies": {
+    "command-line-args": "^5.1.1",
+    "command-line-usage": "^6.1.0",
+    "fluent-ffmpeg": "^2.1.2"
+  }
+}
