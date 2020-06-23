@@ -1,4 +1,4 @@
-const {transcodeAudioFile} = require('../../index');
+const {transcodeMediaFile} = require('../../index');
 const commandLineArgs = require('command-line-args');
 
 const transcode = async (argv = []) => {
@@ -8,13 +8,14 @@ const transcode = async (argv = []) => {
         {name: 'outFormat', alias: 'f', type: String, multiple: false, defaultValue: 'mp3'}
     ];
 
-    const options = commandLineArgs(transcodeOptions, {argv});
+    const opts = commandLineArgs(transcodeOptions, {argv});
 
-    const {inFile, outFile, outFormat} = options;
+    const {inFile, outFile, outFormat} = opts;
 
     try {
-        await transcodeAudioFile(inFile, outFile, outFormat);
+        await transcodeMediaFile(inFile, outFile, outFormat);
     } catch (e) {
+        console.error(e);
         throw e;
     }
 };
@@ -52,7 +53,8 @@ const options = () => {
 const examples = () => {
     return [
         'transcode --inFile ./my-input-file.wav --outFile ./my-output-file.mp3 --outFormat mp3',
-        'transcode -i ./my-input-file.mp3 -o ./my-output-file.wav -f wav'
+        'transcode -i ./my-input-file.mp3 -o ./my-output-file.wav -f wav',
+        'transcode -i ./my-input-file.mp4 -o ./my-output-file.mp3 -f mp3',
     ];
 };
 
