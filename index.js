@@ -1,6 +1,5 @@
-const {transcodeAudioFile} = require('./lib/audio');
+const {transcodeMediaFile} = require('./lib/media');
 
 module.exports = {
-    transcodeAudioFile,
-    transcodeVideoFile: transcodeAudioFile,
+    transcodeMediaFile,
 };
