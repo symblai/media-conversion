@@ -2,6 +2,14 @@
 
 A simple set of media utilities.
 
+## Prerequistes
+In order to use this utility you would need [ffmpeg](http://www.ffmpeg.org/) installed on your system.
+The simplest way to install ffmpeg on Mac OS X is [Homebrew](https://brew.sh/)
+
+```bash
+brew install ffmpeg
+```
+
 ## Install
 This utility can be used as a library in your NodeJS code. You can simply install it in your local project.
 
