@@ -9,7 +9,7 @@
   "directories": {
     "lib": "lib",
     "bin": "bin",
-    "example": "example"
+    "example": "examples"
   },
   "repository": {
     "type": "git",
