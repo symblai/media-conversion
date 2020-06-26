@@ -1,4 +1,5 @@
 const {transcodeMediaFile} = require('../index');
+
 (async () => {
     try {
         const result = await transcodeMediaFile('./my-input-file.wav', 'my-output-file.mp3');
