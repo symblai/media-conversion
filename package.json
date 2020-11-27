@@ -1,6 +1,6 @@
 {
   "name": "symbl-media",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Convenience tools to convert your media",
   "main": "index.js",
   "bin": {
