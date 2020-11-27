@@ -53,7 +53,7 @@ media transcode -i ./my-input-file.wav -o ./my-output-file.mp3 -f mp3
 </pre>
 
 #### Using Code
-You can quickly transcode an audio file using `transcodeMediaFile` method.
+You can quickly transcode any audio/video file using `transcodeMediaFile` method.
 
 ```javascript
 const {transcodeMediaFile} = require('symbl-media');

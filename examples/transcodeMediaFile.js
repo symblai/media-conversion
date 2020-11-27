@@ -8,3 +8,14 @@ const {transcodeMediaFile} = require('../index');
         console.error(e);
     }
 })();
+
+// using the options object to pass custom inputs for transcoding
+
+(async () => {
+    try {
+        const result = await transcodeMediaFile('./example-audio.ts', 'my-output-file.wav', 'wav', {inputs: ['-vn']});
+        console.log('Successfully transcoded to: ', result.outPath);
+    } catch (e) {
+        console.error(e);
+    }
+})();
