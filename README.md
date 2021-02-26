@@ -1,27 +1,46 @@
 # Symbl Media Utility
 
-A simple set of media utilities.
 
-## Prerequistes
-In order to use this utility you would need [ffmpeg](http://www.ffmpeg.org/) installed on your system.
-The simplest way to install ffmpeg on Mac OS X is [Homebrew](https://brew.sh/)
+Symbl's APIs empower developers to enable: 
+- **Real-time** analysis of free-flowing discussions to automatically surface highly relevant summary discussion topics, contextual insights, suggestive action items, follow-ups, decisions, and questions.
+- **Voice APIs** that makes it easy to add AI-powered conversational intelligence to either [telephony][telephony] or [WebSocket][websocket] interfaces.
+- **Conversation APIs** that provide a REST interface for managing and processing your conversation data.
+- **Summary UI** with a fully customizable and editable reference experience that indexes a searchable transcript and shows generated actionable insights, topics, timecodes, and speaker information.
+
+<hr />
+
+## Use this simple set of utilities for transcoding audio files either in NodeJS code, or as a CLI.
+
+<hr />
+
+ * [Setup](#setup)
+ * [Usage](#usage)
+ * [Community](#community)
+ 
+## Setup 
+
+### Prerequisites
+Use of this utility requires [ffmpeg](http://www.ffmpeg.org/) installed on your system.  If not already installed, [download](http://www.ffmpeg.org/download.html) or if on Mac install with [Homebrew](https://brew.sh/)
 
 ```bash
 brew install ffmpeg
 ```
 
-## Install
-This utility can be used as a library in your NodeJS code. You can simply install it in your local project.
+### Install
+For use as a library in your NodeJS code, run the following from inside your local project:
 
 ```bash
 npm install symbl-media --save
 ```
 
-If you don't want to use it in your code, you can install this utility as a CLI command.
+For use as a CLI: 
+
 ```bash
 npm install -g symbl-media
 ```
-To verify that it's installed properly, check with version command.
+
+To verify that it's installed properly, check with version command:
+
 ```bash
 media version
 ```
@@ -35,7 +54,7 @@ If using in CLI mode, to print the detailed usage of this utility you can run th
 media --help
 ```
 
-### Transcode Audio File
+#### Transcode Audio File
 
 You can simply [transcode](https://en.wikipedia.org/wiki/Transcoding) (convert) an audio file on your file system using this utility.
 
@@ -67,3 +86,20 @@ const {transcodeMediaFile} = require('symbl-media');
 })();
 ```
 Also checkout the [Examples](examples) folder for more examples
+
+## Community 
+
+If you have any questions, feel free to reach out to us at devrelations@symbl.ai, through our Community [Slack][slack], or [developer community][developer_community]
+
+This guide is actively developed, and we love to hear from you! Please feel free to [create an issue][issues] or [open a pull request][pulls] with your questions, comments, suggestions and feedback.  If you liked our integration guide, please star our repo!
+
+This library is released under the [MIT License][license]
+
+[license]: LICENSE.txt
+[telephony]: https://docs.symbl.ai/docs/telephony/overview/post-api
+[websocket]: https://docs.symbl.ai/docs/streamingapi/overview/introduction
+[developer_community]: https://community.symbl.ai/?_ga=2.134156042.526040298.1609788827-1505817196.1609788827
+[signup]: https://platform.symbl.ai/?_ga=2.63499307.526040298.1609788827-1505817196.1609788827
+[issues]: https://github.com/symblai/symbl-media/issues
+[pulls]: https://github.com/symblai/symbl-media/pulls
+[slack]: https://join.slack.com/t/symbldotai/shared_invite/zt-4sic2s11-D3x496pll8UHSJ89cm78CA
