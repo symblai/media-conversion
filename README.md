@@ -1,4 +1,4 @@
-# Symbl Media Utility
+# Symbl Media Converter
 
 A simple set of media utilities.
 
