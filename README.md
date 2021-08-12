@@ -1,4 +1,4 @@
-# Symbl Media Conversion
+# Media Conversion
 
 
 Symbl's APIs empower developers to enable: 
