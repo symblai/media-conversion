@@ -1,4 +1,4 @@
-# Symbl Media Converter
+# Symbl Media Conversion
 
 
 Symbl's APIs empower developers to enable: 
@@ -10,8 +10,6 @@ Symbl's APIs empower developers to enable:
 <hr />
 
 ## Use this simple set of utilities for transcoding audio files either in NodeJS code, or as a CLI.
-
-<hr />
 
  * [Setup](#setup)
  * [Usage](#usage)
